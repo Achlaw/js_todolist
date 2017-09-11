@@ -26,9 +26,11 @@ function listList() {
 function newList() {
   var newList = prompt("Enter your todo here.");
   list.push(newList);
+  console.log("New todo added.")
 }
 
 function deleteList() {
   var index = prompt("Which todo number would you like to delete?");
   list.splice(index, 1);
+  console.log("Todo deleted.")
 }
