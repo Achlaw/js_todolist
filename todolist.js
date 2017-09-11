@@ -1,11 +1,14 @@
 var list = ["Play Dark Souls The Board Game"];
 
-var input = prompt("Add your todo by typing here.")
+var input = prompt("What would you like to do?")
 
-if(input === "list") {
-  console.log(list);
-} else if(input === "new") {
-  var newList = prompt("Add another todo?");
-
-  list.push(newList);
+while(input !== "quit") {
+  if(input === "list") {
+    console.log(list);
+  } else if(input === "new") {
+    var newList = prompt("Enter your todo here.");
+    list.push(newList);
+  }
+  input = prompt("What would you like to do?")
 }
+ console.log("You quit the app, goodbye.")
