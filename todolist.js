@@ -12,6 +12,9 @@ while(input !== "quit") {
   } else if(input === "new") {
     var newList = prompt("Enter your todo here.");
     list.push(newList);
+  } else if(input === "delete") {
+  	var index = prompt("Which todo number would you like to delete?");
+    list.splice(index, 1);
   }
   input = prompt("What would you like to do?")
 }
