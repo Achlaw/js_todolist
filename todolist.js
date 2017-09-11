@@ -1,13 +1,12 @@
 var list = ["Play Dark Souls The Board Game"];
 
-var input = prompt("What would you like to do?")
+var input = prompt("What would you like to do?");
 
 while(input !== "quit") {
-  list.forEach(function(todo, index){
-  	console.log(index + ": " + todo)
-  });
   if(input === "list") {
-    console.log(list);
+    list.forEach(function(todo, index) {
+      console.log(index + ": " + todo);
+    });
   } else if(input === "new") {
     var newList = prompt("Enter your todo here.");
     list.push(newList);
