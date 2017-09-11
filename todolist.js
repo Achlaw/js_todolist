@@ -3,8 +3,8 @@ var list = ["Play Dark Souls The Board Game"];
 var input = prompt("What would you like to do?")
 
 while(input !== "quit") {
-  list.forEach(function(todo){
-  	console.log(todo)
+  list.forEach(function(todo, index){
+  	console.log(index + ": " + todo)
   });
   if(input === "list") {
     console.log(list);
